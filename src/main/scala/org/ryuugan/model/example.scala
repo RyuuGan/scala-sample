@@ -1,4 +1,4 @@
-package org.ryuugan
+package ru.circumflex.samples
 
 import ru.circumflex._, orm._
 import java.util.Date

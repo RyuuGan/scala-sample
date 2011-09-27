@@ -1,4 +1,4 @@
-package org.ryuugan
+ru.circumflex.samples
 
 /**
  * @author Valery Aligorsky
