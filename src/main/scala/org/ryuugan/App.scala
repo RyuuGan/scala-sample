@@ -1,7 +1,7 @@
 package org.ryuugan
 
 /**
- * @author ${user.name}
+ * @author Valery Aligorsky
  */
 object App {
   

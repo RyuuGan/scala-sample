@@ -6,6 +6,7 @@ syntax: glob
 *.bak
 #*.off
 *.old
+*.db
 
 # eclipse conf file
 .settings
@@ -17,6 +18,8 @@ syntax: glob
 # idea
 .idea
 *.iml
+*.ipr
+*.iws
 
 # building
 target
