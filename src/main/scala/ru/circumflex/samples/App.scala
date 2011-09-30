@@ -1,4 +1,4 @@
-package ru.circumflex.samples
+package org.ryuugan.samples
 
 import java.util.Date
 
@@ -13,9 +13,6 @@ object App {
   def main(args : Array[String]) {
     println( "Hello World!" )
     println("concat arguments = " + foo(args))
-    val e = new Example
-    println(e.registeredAt.map(d => d.toString))
-    println(e.queuedAt.map(d => d.toString))
   }
 
 }

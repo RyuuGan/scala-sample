@@ -1,25 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ru.circumflex.samples</groupId>
-  <artifactId>sample-orm-app</artifactId>
+  <groupId>org.ryuugan.samples</groupId>
+  <artifactId>sample-scala-app</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>${project.artifactId}</name>
 
   <properties>
     <encoding>UTF-8</encoding>
-    <cx.version>2.1</cx.version>
-    <orm.connection.url>jdbc:h2:sampledb</orm.connection.url>
-    <orm.connection.username>sa</orm.connection.username>
-    <orm.connection.password/>
     <scala.version>2.9.0-1</scala.version>
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>ru.circumflex</groupId>
-      <artifactId>circumflex-orm</artifactId>
-      <version>${cx.version}</version>
-    </dependency>
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
@@ -35,19 +25,6 @@
       <artifactId>jline</artifactId>
       <version>${scala.version}</version>
       <scope>test</scope>
-    </dependency>
-
-    <!-- H2 Database -->
-    <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
-      <version>1.3.158</version>
-    </dependency>
-    <!-- Logger -->
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <version>0.9.26</version>
     </dependency>
   </dependencies>
 
@@ -67,31 +44,6 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <groupId>ru.circumflex</groupId>
-        <artifactId>maven-cx-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>configure</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>cfg</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <packages>
-            <package>ru.circumflex.samples</package>
-          </packages>
-        </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>1.2.142</version>
-          </dependency>
-        </dependencies>
       </plugin>
     </plugins>
   </build>
